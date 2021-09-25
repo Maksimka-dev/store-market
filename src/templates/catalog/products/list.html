@@ -1,0 +1,16 @@
+<html lang=" en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Catalog &38211; E-Shop </title>
+</head>
+<body>
+<hi>Catalog</hi>
+<ul>
+    <li data-th-each="product : ${products}" class="product">
+        <a data-th-href="@/catalog/products/{productId}(productId=${product.id})}"
+           data-th-text="${product.title}"></a>
+    </li>
+
+</ul>
+</body>
+</html>
